@@ -20,7 +20,6 @@ build:
 
 requirements:
   build:
-
   host:
     - r-base
   run:
@@ -33,11 +32,12 @@ test:
 
 about:
   home: http://CRAN.R-project.org/package=Xmisc
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: This is Xiaobei's miscellaneous classes and functions useful when developing R packages,
     particularly for OOP using R Reference Class.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
